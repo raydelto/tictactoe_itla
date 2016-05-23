@@ -8,6 +8,7 @@
 #ifndef TICTACTOE_H_
 #define TICTACTOE_H_
 #include <iostream>
+
 void init();
 bool validate();
 void clearScreen();

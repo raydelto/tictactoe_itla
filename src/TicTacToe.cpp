@@ -58,7 +58,8 @@ bool isValidInput(istream& in){
 	    in.clear();
 	    in.ignore(numeric_limits<streamsize>::max(), '\n'); //skip bad input
 	    return false;
-	}else{
+	}else
+	{
 		return true;
 	}
 }
@@ -100,9 +101,13 @@ void showBoard()
 			cin >> column;
 		}while(!isValidInput(cin) && !validate(column));
 
-		if(isAvailable(row,column)){
+		if(isAvailable(row,column))
+		{
 			board[row - 1][column - 1] = player;
 			player = player == 'X' ? 'O' : 'X';
+		}else
+		{
+			cout << "The cell " << row << " , " << column << " is not available" << endl;
 		}
 	}
 }
