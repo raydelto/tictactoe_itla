@@ -48,6 +48,7 @@ bool gameover()
 {
 	//TODO: Implement this method,verify if any player has won the match of it's being a tie.
 	//Return true if the game is over. Print message informing the user about what just happened.
+	cout << "Has perdido!" << endl;
 	return false;
 }
 
